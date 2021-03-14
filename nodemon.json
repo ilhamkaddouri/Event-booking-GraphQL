@@ -1,0 +1,6 @@
+{
+    "env":{
+        "DATABASE":"mongodb+srv://ilham:<password>@cluster0.2slfn.mongodb.net/EventBookings?retryWrites=true&w=majority",
+        "DATABASE_PASSWORD":"mongoadmin"
+    }
+}

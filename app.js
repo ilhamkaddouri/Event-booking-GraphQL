@@ -5,6 +5,7 @@ const { buildSchema } = require('graphql')
 //Mongoose
 const mongoose = require('mongoose')
 const bcrypt = require('bcryptjs')
+const cors= require('cors')
 
 const schema = require('./graphql/schema/schema')
 //dotenv
@@ -12,6 +13,7 @@ require('dotenv').config()
 
 
 const app = express()
+app.use(cors())
 //models
 const Event = require('./models/Event')
 const User = require('./models/User')
